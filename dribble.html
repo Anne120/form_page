@@ -1,0 +1,124 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind css extension-->
+    <script src="https://cdn-tailwindcss.vercel.app"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-grey-50 container font-serif font-normal leading-7 text-grey-900">
+    <!--body-->
+
+    <!--header-->
+    <div class="py-7 bg-auto bg-gray-800 pb-0">
+        <h3 class="text-yellow-400 text-left pl-16 "> + NEW ORDER</h3>
+    </div>
+    <!--end of header-->
+
+    <!--form container-->
+    <div class="mx-16 min-w-full box-border">
+
+
+
+        <div class="pb-4">
+            <h2 class="text-4xl border-yellow-300 border-b-8 rounded"> New Order <br></h2>
+        </div>
+        <span> Order Form </span> <span class="text-gray-800"> > Review & Ship</span>
+
+        <div class="pt-4">
+            <h4 class="border-b-2 pb-4"> 1. Order Details </h4><br>
+        </div>
+
+        <!--begining of form-->
+        <form class="min-w-full">
+            <div class=" grid grid-cols-2 gap-x-2 pb-2 w-full">
+                <div>
+                    <label for="order"> <b> Order Name </label><br>
+                    <input class="w-full p-0 pl-3 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200" type="text" id="Order Name" name="order name" placeholder="Order #1">
+                </div>
+
+                <div>
+                    <label for="license"> <b> My License Number </label><br>
+                    <input class=" w-full p-0 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200" type="text" id="License" name="license" placeholder="select a license" required>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-4 gap-x-2 w-full">
+                <div>
+                    <label for="action"> <b> Action </label><br>
+                    <input class="w-full p-0 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200" type="text" id="action" name="action" placeholder="Drop Off">
+                </div>
+
+                <div>
+                    <label for="date"> <b> Date </label><br>
+                    <input class="w-full p-0 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200" type="string" id="date" name="date" placeholder="January 7, 2019">
+                </div>
+
+                <div>
+                    <label for="time"> <b> Time Window </label><br>
+                    <input class="w-full p-0 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200 " type="text" id="Text" name="time" placeholder="All Day">
+                </div>
+
+                <div>
+                    <label for="payment"> <b> Payment Terms </label><br>
+                    <input class="w-full p-0 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200" type="text" id="paym" name="payment" placeholder="COD, NEt 20.etc.">
+                </div>
+            </div>
+
+            <div class=" grid grid-cols-2 pb-2">
+                <div>
+                    <label for="destination"> <b> Destination </b> add new destination </label><br>
+                    <input style="width: 600px;;" class=" p-0 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200" type="text" id="destination" name="destination" placeholder="select an address">
+                </div>
+
+                <div>
+                    <label for="license number"> <b> Destination License Number </label><br>
+                    <input style="width: 600px;;" class=" p-0 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200" type="text" id="license number" name="license number" placeholder="Select a license..">
+                </div>
+            </div>
+
+            <div style="display: grid; flex: 33.3%;  gap: 2rem 1rem; flex-direction:columns; padding-bottom: 1rem; grid-template-columns: 1fr 1fr 1fr;">
+                <div>
+                    <label for="contact"> <b> Point of Contact </label><br>
+                    <input style="width: 150px;" class="p-0 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200" type="text" id="contact" name="contact" placeholder="Mrs.Order Recipient">
+                </div>
+
+                <div>
+                    <label for="phone"> <b> Phone Number </label><br>
+                    <input style="width: 150px;" class=" p-0 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200" type="int" id="number" name="number" placeholder="123-456-7891">
+                </div>
+
+                <div>
+                    <label for="email"> <b> Email </label><br>
+                    <input style="width: 150px;" class="p-0 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200" type="text" id="email" name="email" placeholder="alex19@gmail.com">
+                </div>
+            </div>
+
+            <div class="pb-2">
+                <label for="driver"> <b> Driver/ Delivery Notes </label><br>
+                <input style="width: 600px;" class="width= 100% p-8 mb-1 inline-block border-2 hover:border-yellow-400 bg-gray-200" type="text" id="info" name="info" placeholder="additional info...">
+            </div>
+
+            <label for="attacments"> <b> Attachments (0) </label><br>
+            <div style="width: 300px;" class="p-2 inline-block border-1 hover:border-yellow-400 bg-gray-200">
+                <div class="fas fa-cloud-upload-alt">
+                    <input type="text" id="attachments" name="order name" placeholder="Upload new attachment">
+                </div>
+            </div>
+            <span class="text-gray-400 text-xs"> What is this </span>
+    </div>
+
+    <!--end of form container-->
+    </form>
+    </section>
+</body>
+
+</html>
